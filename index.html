@@ -26,8 +26,11 @@ body {
   height:100vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items:center;
+  position:absolute;
+  top:25%;
+  bottom:40%;
+  justify-content: space-between;
+  align-items:left;
   padding: 100px;
 }
 .s1h1{
@@ -50,19 +53,27 @@ body {
   border:none;
 }
 
-.avatar{
-  
-}
 
-    @media(max-width: 1600px){
+@media(max-width: 1600px){
   .section1{
     justify-content:space-between;
   }
-      .avatar{
-        margin-left:100px;
-      }
-     
+  .avatar{
+    margin-left:100px;
   }
+  }
+  @media(max-width:767px){
+    .s1h1{
+      font-size:75px;
+      width:400px;
+    }
+    .avatar{
+height:300px;
+width:300px;
+position:absolute;
+left:300px;
+}
+    }
   </style>
 </head>
 <body>
