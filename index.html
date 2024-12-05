@@ -20,77 +20,83 @@ body {
   background: #161616;
   font-family: "Raleway", sans-serif;
 }
-.section1{
-  color:white;
-  width:100%;
+.container{
+  width:100vw;
   height:100vh;
+  background: #161616;
   display: flex;
-  flex-direction: row;
-  position:absolute;
-  top:25%;
-  bottom:40%;
-  justify-content:space-between;
-  align-items:left;
-  padding: 100px;
 }
-.s1h1{
-  font-size: 100px;
-  padding-bottom: 20px;
+.sec2{
+  height:100vh;
+  width:50vw;
+  padding:15vh 15vw;
+  display:flex;
+  justify-content: right;
 }
-.s1h2{
-  font-size: 30px;
+.sec1{
+  height:100vh;
+  width:50vw;
+  padding:15vh 6vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Himanshu{
+  color:#dce0ac;
+  font-size: 6vw;
+  padding-bottom:2.5vh;
+}
+.sec1h2{
   color:white;
-  font-weight: thin;
-  line-height: 50px;
+  font-size: 3.2vw;
+  width:45vw;
+  line-height:5.5vw;
+  padding-bottom:7vh;
 }
-.btn{
-  height: 50px;
-  width:150px;
-  margin-top:50px;
-  border-radius: 40px;
-  background: #dce0ac;
-  font-size: 20px;
+.sec1 button{
+  height:3.5vw;
+  width:10vw;
   border:none;
+  border-radius:30px;
+  font-size:1.5vw;
+  background:#dce0ac;
 }
-
-
-@media(max-width: 1600px){
-  .section1{
-    justify-content:space-between;
-  }
-  .avatar{
-    margin-left:100px;
-  }
-  }
-  @media(max-width:769px){
-    .s1h1{
-      font-size:75px;
-      width:250px;
-      
-    }
-    .s1h2{font-size:20px;
-      width:300px;
-    }
-    .avatar{
-      height:250px;
-      width:250px;
-      position:absolute;
-      top:150px;
-      left:340px;
+.sec2 {
+  background-image: url('https://i.postimg.cc/pLBqCPt8/20241127-125523-0000.png');
+  background-size:620px 620px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
 }
-.section1{
-  padding:50px;
+@media(max-width:600px){
+  .container{
+    flex-direction:column;
+  }
+  .sec1{
+    width:100vw;
+    height:50vh;
+    
+  }
+  .sec2{
+    width:100vw;
+    height:50vh;
+    background-size:300px 300px;
+    background-position: bottom;
+  }
 }
-    }
-  </style>
+</style>
 </head>
 <body>
-  <section class="section1">
-   <div class="content"> <h1 class="s1h1">Himanshu</h1>
-    <h3 class="s1h2">Frontend Developer Engaging.<br> Creating User-Friendly Web<br> Experiences.</h3><br>
-    <button class="btn">Contact me</button></div>
-    <img class="avatar" src="https://i.postimg.cc/gkmyS3rL/20241127-125523-0000.png" width="400px" height="400px">
+  <div class="container">
+  <section class="sec1">
+    <h1 class="Himanshu">Himanshu</h1>
+        <h2 class="sec1h2">Frontend Developer Engaging, Creating User-Friendly Web Experiences.</h2>
+        <button>Contact me</button>
   </section>
+  <section class="sec2">
+<!--     <img src="https://i.postimg.cc/pLBqCPt8/20241127-125523-0000.png" alt="avatar image"> -->
+  </section>
+</div>
   <script src="script.js" >
   
   </script>
