@@ -20,6 +20,9 @@ html, body{
   height:100%;
   width:100%;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: #161616;
   font-family: "Raleway", sans-serif;
@@ -72,6 +75,79 @@ body {
   background-repeat: no-repeat;
   
 }
+.container2{
+  width:100vw;
+  height:100vh;
+  background: #161616;
+  display: flex;
+  flex-direction: column;
+}
+.sec3{
+  height:60vh;
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: ;
+  align-items: center;
+}
+.card2{
+  padding:3.7%;
+  background:#ffd4ac;
+  font-size: 1.8vw;
+  width:42%;
+  border-radius:15%;
+  height:73%;
+}
+.sec4{
+  height:40vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+.card1{
+  height:73%;
+  padding: 3.1%;
+  font-size: 1.8vw;
+  background:#dce0ac;
+  width:42%;
+  border-radius:15%;
+}
+.card1 h1{
+  text-align: right;
+  margin-bottom: 1vh;
+}
+.card1 h3{
+  letter-spacing: 0.1vw;
+  font-weight:500;
+  line-height: 3.5vw;
+  margin-bottom: 5vh;
+}
+.card2 h1{
+  text-align:right;
+}
+.card2 h3{
+  line-height: 5.4vh;
+  font-weight:500;
+  font-size: 2vw;
+  margin-bottom: 0vh;
+  letter-spacing: 0.1vw;
+}
+.sec4 h1{
+  font-size: 9vh;
+  color:#ffd4ac;
+  line-height: 5.4vh;
+  margin-bottom:4vh;
+}
+.sec4 h3{
+  width:35vw;
+  text-align:center;
+  font-size: 4.2vh;
+  font-weight:500;
+  letter-spacing: 0.1vw;
+  color:white;
+}
 @media(max-width:600px){
   .container{
     flex-direction:column;
@@ -106,6 +182,36 @@ body {
     font-size:2.3vw;
     margin-top:10vh;
   }
+  .sec3{
+    flex-direction:column;
+  }
+  .card1{
+    width:80%;
+    height:35%;
+    border-radius: 10px;
+  }
+  .card2{
+    width:80%;
+    height:35%;
+    border-radius: 10px;
+  }
+  .card1 h3{
+    font-size: 3vw;
+    width:85%;
+    margin-bottom: 8vh;
+    font-weight:300;
+  }
+  .card2 h3{
+    line-height:2.9vh;
+    font-size: 2.8vw;
+  }
+  .sec4 h1{
+    font-size: 6vh;
+  }
+  .sec4 h3{
+    font-size: 2.8vh;
+    width:70vw;
+  }
 }
 </style>
 </head>
@@ -118,6 +224,31 @@ body {
   </section>
   <div class="sec2">
 <!--     <img src="https://i.postimg.cc/pLBqCPt8/20241127-125523-0000.png" alt="avatar image"> -->
+  </div>
+</div>
+<div class="container2">
+  <div class="sec3">
+    <div class="card1">
+      <h3>Hi! I'm Himanshu.
+I'm a frontend developer skilled in HTML, CSS, JavaScript, jQuery, and Bootstrap. I specialize in building responsive websites and exploring 3D graphics with Three.js.</h3>
+<h1>About me</h1>
+    </div>
+    <div class="card2">
+      <h3><pre>
+&lt;HTML&gt;
+  &lt;CSS&gt;
+     &lt;JS&gt;
+     &lt;BOOTSTRAP&gt;
+  &lt;JQUERY&gt;
+&lt;THREE.JS&gt;
+        </pre>
+</h3>
+<h1>Skills</h1>
+    </div>
+  </div>
+  <div class="sec4">
+    <h1>Fun Fact</h1>
+    <h3>In my free time, I enjoy experimenting with 3D design and animations using Three.js.</h3>
   </div>
 </div>
   <script src="script.js" >
