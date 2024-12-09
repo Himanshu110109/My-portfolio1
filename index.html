@@ -5,18 +5,20 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>My portfolio</title>
-  <style>
-    * {
-  box-sizing: border-box;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<title>My portfolio</title>
+<style>
+  * {
+    box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-html, body{ 
+html, body{
   height:100%;
   width:100%;
 }
@@ -70,10 +72,9 @@ body {
 }
 .sec2 {
   background-image: url('https://i.postimg.cc/pLBqCPt8/20241127-125523-0000.png');
-  background-size:620px 620px;
+    background-size:620px 620px;
   background-position: bottom;
   background-repeat: no-repeat;
-  
 }
 .container2{
   width:100vw;
@@ -182,6 +183,10 @@ font-size: 2;  width:42%;
   height:40%;
   margin-bottom:6%;
   border-radius: 25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
 }
 .sec5 .pro1{
   background:#dce0ac;
@@ -196,17 +201,43 @@ font-size: 2;  width:42%;
   white,
   #161616
   );
-  color:transparent;
+    color:transparent;
   -webkit-background-clip:text;
 }
-@media(max-width:600px){
-  .container{
+.sec5 .circle{
+  height:48%;
+  width:60%;
+  border-radius:50%;
+  overflow:visible;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.sec5 h3{
+  font-size: 3.5vh;
+  margin-top:2vh;
+  font-weight:500;
+}
+.c2{
+font-size:5vw;
+color:#ffd4ac;
+}
+.c1{
+font-size:5vw;
+color:#dce0ac;
+}
+.c3{
+font-size:5vw;
+color:white;
+}
+    @media(max-width:600px){
+    .container{
     flex-direction:column;
   }
   .sec1{
     width:100vw;
     height:55vh;
-    
   }
   .sec2{
     width:100vw;
@@ -262,57 +293,70 @@ font-size: 2;  width:42%;
     width:70vw;
   }
 }
-
-</style>
+  </style>
 </head>
 <body>
   <div class="container">
-  <section class="sec1">
-    <h1 class="Himanshu">Himanshu</h1>
-        <h2 class="sec1h2">Frontend Developer Engaging, Creating User-Friendly Web Experiences.</h2>
-        <button>Contact me</button>
-  </section>
-  <div class="sec2">
-<!--     <img src="https://i.postimg.cc/pLBqCPt8/20241127-125523-0000.png" alt="avatar image"> -->
-  </div>
-</div>
-<div class="container2">
-  <div class="sec3">
-    <div class="card1">
-      <h3>Hi! I'm Himanshu.
-I'm a frontend developer skilled in HTML, CSS, JavaScript, jQuery, and Bootstrap. I specialize in building responsive websites and exploring 3D graphics with Three.js.</h3>
-<h1>About me</h1>
+    <section class="sec1">
+      <h1 class="Himanshu">Himanshu</h1>
+      <h2 class="sec1h2">Frontend Developer Engaging, Creating User-Friendly Web Experiences.</h2>
+      <button>Contact me</button>
+    </section>
+    <div class="sec2">
+      <!--     <img src="https://i.postimg.cc/pLBqCPt8/20241127-125523-0000.png" alt="avatar image"> -->
     </div>
-    <div class="card2">
-      <h3><pre>
-&lt;HTML&gt;
-  &lt;CSS&gt;
-     &lt;JS&gt;
-     &lt;BOOTSTRAP&gt;
-  &lt;JQUERY&gt;
-&lt;THREE.JS&gt;
+  </div>
+  <div class="container2">
+    <div class="sec3">
+      <div class="card1">
+        <h3>Hi! I'm Himanshu.
+          I'm a frontend developer skilled in HTML, CSS, JavaScript, jQuery, and Bootstrap. I specialize in building responsive websites and exploring 3D graphics with Three.js.</h3>
+        <h1>About me</h1>
+      </div>
+      <div class="card2">
+        <h3><pre>
+          &lt;HTML&gt;
+          &lt;CSS&gt;
+          &lt;JS&gt;
+          &lt;BOOTSTRAP&gt;
+          &lt;JQUERY&gt;
+          &lt;THREE.JS&gt;
         </pre>
-</h3>
-<h1>Skills</h1>
+        </h3>
+        <h1>Skills</h1>
+      </div>
+    </div>
+    <div class="sec4">
+      <h1>Fun Fact</h1>
+      <h3>In my free time, I enjoy experimenting with 3D design and animations using Three.js.</h3>
     </div>
   </div>
-  <div class="sec4">
-    <h1>Fun Fact</h1>
-    <h3>In my free time, I enjoy experimenting with 3D design and animations using Three.js.</h3>
+  <div class="container3">
+    <div class="sec5">
+      <div class="pro1 card">
+        <div class="circle c1">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <h3>Weather app</h3>
+      </div>
+      <div class="pro2 card">
+        <div class="circle c2">
+          <i class="fa-solid fa-calculator"></i></div>
+        <h3>Calculator</h3>
+      </div>
+      <div class="pro3 card">
+        <div class="circle c3">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3>and more...</h3>
+      </div>
+    </div>
+    <div class="sec6">
+      <h1>PROJECTS</h1>
+    </div>
   </div>
-</div>
-<div class="container3">
-  <div class="sec5">
-    <div class="pro1 card"></div>
-    <div class="pro2 card"></div>
-    <div class="pro3 card"></div>
-  </div>
-  <div class="sec6">
-    <h1>PROJECTS</h1>
-  </div>
-</div>
-  <script src="script.js" >
-  
+  <script src="script.js">
+
   </script>
 </body>
 </html>
