@@ -10,7 +10,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
 <title>My portfolio</title>
 <style>
   * {
@@ -52,9 +51,29 @@ body {
 }
   
 .Himanshu{
-  color:#dce0ac;
   font-size: 6vw;
   padding-bottom:2.5vh;
+  -webkit-text-stroke:0.1vw #dce0ac;
+  letter-spacing: 0.5vw;
+}
+.Himanshu::before{
+  content:attr(data-text);
+  position:absolute;
+  width:0;
+  height:8vh;
+  color:#dce0ac;
+  -webkit-text-stroke:0.3vw #dce0ac;
+  /* border-right:1.25px solid #dce0ac; */
+  overflow:hidden;
+  animation:animate 4s linear infinite;
+}
+@keyframes animate{
+  0%, 10%, 100%{
+    width:0%;
+  }
+  70%, 90%{
+    width:100%;
+  }
 }
 .sec1h2{
   color:white;
@@ -430,6 +449,20 @@ a{
 .sec9 h3 a{
   color:white;
 }
+.social a{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.social h3{
+  color:white;
+  margin-left:4vw;
+  margin-right:2vw;
+}
+input, textarea{
+  outline: none;
+}
     @media(max-width:600px){
     .container{
     flex-direction:column;
@@ -454,6 +487,7 @@ a{
   .Himanshu{
     font-size: 12vw;
     margin-bottom:3.8vh;
+    -webkit-text-stroke:0.1vw #dce0ac;
   }
   .sec1 button{
     /* padding:1.25vh; */
@@ -602,7 +636,7 @@ a{
 <body>
   <div class="container" id="container">
     <section class="sec1">
-      <h1 class="Himanshu">Himanshu</h1>
+      <h1 class="Himanshu" data-text="Himanshu">Himanshu</h1>
       <h2 class="sec1h2">Frontend Developer Engaging, Creating User-Friendly Web Experiences.</h2>
       <button>Contact me</button>
     </section>
@@ -665,11 +699,12 @@ a{
       <h3>I'd Like To Hear From You. ♥️</h3>
     </div>
     <div class="sec8">
-      <form>
-        <input type="text" placeholder="Name" class="Name">
-        <input type="email" placeholder="Email" class="email">
-        <textarea placeholder="Messege" class="textarea"></textarea>
-        <div class="sendiv"><input type="submit" placeholder="Send" class="send"></div>
+      <form id="form" action="https://formsubmit.co/himanshu110109@gmail.com" method="post">
+        <input type="text" placeholder="Name" class="Name" required="required" id="fullname" name="name">
+        <input type="email" placeholder="Email" class="email" required="required" id="email_id" name="email">
+        <textarea placeholder="Messege" class="textarea" required="required" id="messege"name="messege"></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <div class="sendiv"><input type="submit" placeholder="Send" class="send" id="send"></div>
       </form>
     </div>
   </div>
@@ -691,12 +726,12 @@ a{
     <div class="sec11">
       <h1>Social Links</h1>
       <div class="social">
-        <div class="insta"><i class="fa-brands fa-instagram"></i></div>
-        <h3>Instagram</h3>
-        <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
-        <h3>Whatsapp</h3>
-        <div class="telegram"><i class="fa-brands fa-telegram"></i></div>
-        <h3>Telegram</h3>
+        <a href="https://www.instagram.com/code__with_himanshu"><div class="insta"><i class="fa-brands fa-instagram"></i></div>
+        <h3>Instagram</h3></a>
+        <a href="https://wa.link/p6xbo5"><div class="whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+        <h3>Whatsapp</h3></a>
+        <a href="https://t.me/user_not_found110"><div class="telegram"><i class="fa-brands fa-telegram"></i></div>
+        <h3>Telegram</h3></a>
       </div>
     </div>
     </div>
@@ -705,7 +740,9 @@ a{
     </div>
   </footer>
   <script src="script.js">
-
+  </script>
+  <script>
+    
   </script>
 </body>
 </html>
